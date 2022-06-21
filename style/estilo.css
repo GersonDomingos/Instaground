@@ -1,0 +1,125 @@
+*{                                           /*Utiliza-se este recurso para "zerar" as formatações inicial do código*/        
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+body{                                        /*Estilização do corpo do código como um todo*/
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.content{                                      /*Estilização do conteúdo geral da página*/
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+.content-phone{                               /*A estilização desta div diz respeito ao conteúdo da parte esquerda da página*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.content-phone img{                           /*Imagem do celular com a LandPage do Instagram*/
+    height: 45rem;
+}
+.content-continue{                           /*Esta parte é da coluna direita, onde estão os links referentes à login*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem; 
+    margin: 40px;
+}
+.content-continue-coluna{                     /*Classe nomeada para ambos os blocos, primeiro e segundo da direita para simultânea estilização*/
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    padding: 2rem 0;   
+    border: 1px solid lightgrey;
+      
+}
+.content-continue-coluna:nth-child(1){         /*nth-child(n) Escolhe a tag filho específica para estilização*/
+    min-height: 19rem;
+    margin-bottom: 10px;
+}
+.content-continue-instagramImage{              /*Logotipo do Instagram*/
+    height: 3rem;
+}
+.content-continue-profile-photo{               /*Estilização do "bloco 1", dados referentes ao usuário*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0px;
+}
+.content-continue-profile-photo img {           /*Foto do perfil de usuário*/
+    height: 9rem;
+}
+.content-continue-botao{                       /*Estilização do Botão "Continuar como:"*/
+    text-align: center;
+    margin-top: 20px;
+}
+button{
+    background-image: linear-gradient(45deg, #0095f6, #157dd3);
+    padding: 10px 20px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@keyframes animacao {                       /*Criação do efeito a ser aplicado e sua nomeação*/
+    0%{transform: scale(1);                 /*Efeito, crescer botão, na escala de 0 a 100%*/
+    }
+    100%{
+        transform: scale(1.05);
+    }
+}
+button:hover{
+    animation-name: animacao;               /*Invoca o efeito*/
+    animation-duration: 0.5s;               /*Duração do efeito*/
+    animation-timing-function: ease-in-out; /*Intensidade da transição, suavisado no caso*/
+    animation-iteration-count: infinite;    /*Número de vezes em que a transição ocorerá, enquanto cursor posicionado*/
+    animation-direction: alternate;         /*Direção em que a transição ocorrerá*/ 
+}
+.content-continue-remove{                   /*Link Remover Conta*/
+    color: #0095f6;
+    margin-top: 1rem;
+}
+.autentication{                             
+    color: rgb(160, 160, 160);
+}
+.google-button{                             /*Botão baixar Instagram da Google Play Store*/
+    height: 60px;         
+}
+
+.apple-button{                              /*Botão baixar Instagram da Apple Play Store*/
+    height: 40px;
+}
+
+.get-app{                                   /*Bloco 3, conteúdo do adquira o app Instagram*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;    
+}
+.google-apple{                              /*Botões que apontam para as lojas de apps*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;  
+}
